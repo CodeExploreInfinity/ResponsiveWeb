@@ -1,0 +1,142 @@
+   /* font */
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-image: url(../images/BG/BG1.png);
+}
+
+nav{
+    display: flex;
+}
+
+#Logovoli{
+    position: absolute;
+    top: 1%;
+    left: 3%;
+}
+
+
+nav #h22{
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    font-family: 'Eater', cursive;
+    color: white;
+}
+
+nav h2{
+    position: absolute;
+    top: 4%;
+    left: 15%;
+    font-family: 'Eater', cursive;
+}
+
+
+
+nav button{
+    position: absolute;
+    top: 3.5%;
+    left: 83%;
+    background-color:#0029FF;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px 20px 20px 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px ;
+    font-weight: 1000;
+}
+
+nav button a{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px ;
+    font-weight: 1000;
+    text-decoration: block;
+    animation:  transition 0.75s;
+    
+}
+
+#Logovoli{
+    width: 90px;
+    height: 90px;
+}
+
+.horizontal-line {
+    position: absolute;
+    top: 14%;
+    width: 100%; /* Lebar garis */
+    height: 2px; /* Ketebalan garis */
+    background-color: rgb(255, 255, 255); /* Warna garis */
+  }
+.container {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.content-slide {
+    max-width: 905px;
+    position: relative;
+    margin: auto;
+}
+
+.imgslide {
+    display: none;
+}
+
+.imgslide img {
+    vertical-align: middle;
+    width: 904px;
+    height: 556px;
+    padding-bottom: 20px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev{
+    left: 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(225, 225, 225, 0.8);
+    color: black;
+}
+
+@media screen and (max-width: 800px) {
+    .content-slide {
+        padding: 8px 50px 12px 50px;
+    }
+
+    .next {
+        right: 50px;
+        border-radius: 3px 0 0 3px;
+    }
+}
